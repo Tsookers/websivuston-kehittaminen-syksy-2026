@@ -1,29 +1,47 @@
 p {
-    color: black
+    color: #ffbf00
 }
 body {
-    background-color: lightgray;
+    background-color: white;
 }
 h1 {
+    color: #bd0e09;
     font-size: 2em;
 }
+h2 {
+    color: #bd0e09;
+}
+li {
+    color: #ffbf00
+}
 .content-box {
+    width: 550px;
     padding: 20px;
     margin: 10px;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
+    background-color: #bd0e09;
+    border: 3px solid #ffbf00;
+}
+.img-box {
+    width: 300px;
+    padding: 20px;
+    margin: 10px;
+    background-color: #bd0e09;
+    border: 3px solid #ffbf00;
 }
 table {
-    width: 100%;
+    width: 594px;
+    margin: 10px;
     border-collapse: collapse;
 }
 th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
+    width: 50%;
+    border: 3px solid #ffbf00;
+    padding: 10px;
     text-align: left;
 }
 th {
-    background-color: #f2f2f2;
+    background-color: #bd0e09;
+    color: #ffbf00;
 }
 form {
     display: flex;
@@ -32,20 +50,64 @@ form {
 }
 label {
     font-weight: bold;
+    color: #bd0e09;
 }
 input[type="text"], input[type="email"] {
+    width: 550px;
     padding: 8px;
     border: 1px solid #ddd;
-    border-radius: 4px;
+    border-radius: 3px;
 }
 input[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
+    width: 100px;
+    background-color: #bd0e09;
+    color: #ffbf00;
     padding: 10px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
 }
 input[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #ffbf00;
+    color: #bd0e09;
+}
+a {
+    color: #bd0e09;
+}
+.transition-button {
+    background-color: #ffbf00;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.transition-button:hover {
+    background-color: #bd0e09;
+    a {
+        color: #ffbf00;
+    }
+}
+@keyframes move {
+    from {
+        bottom: -100px;
+    }
+    to {
+        bottom: 0px;
+    }
+}
+.animation-box {
+    width: 550px;
+    padding: 20px;
+    margin: 10px;
+    background-color: #bd0e09;
+    border: 3px solid #ffbf00;
+    position: relative;
+    animation: move 2s;
+}
+.pseudo-list li:nth-child(odd) {
+    background-color: #bd0e09;
+}
+.pseudo-list li:nth-child(even) {
+    background-color: #ffbf00;
+    color: #bd0e09;
 }
